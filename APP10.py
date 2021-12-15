@@ -15,7 +15,7 @@ def main():
         run_eda_app()
     
     elif choice == 'ML':
-        pass
+        run_ml_app()
     
     else:
         st.subheader('웹 소개 함수입니다.')
