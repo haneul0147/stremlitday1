@@ -10,3 +10,4 @@ def main():
     st.write(df.head())
 
 if __name__=='__main__':
+    main()
