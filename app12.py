@@ -17,13 +17,13 @@ def main():
 
     print(df1.columns[1: ])
     lang_list =df1.columns[1: ]
-    choisc_list=st.multiselect('언어를 선택하세요',lang_list)
+    choice_list=st.multiselect('언어를 선택하세요',lang_list)
 
-    print(choisc_list)
+    print(choice_list)
 
-    if len(choisc_list) !=0 : 
+    if len(choice_list) !=0 : 
         # 유저가 선택한 언어만, 차트를 그리려고 합니다.
-        df_selected =df1[choisc_list]
+        df_selected =df1[choice_list]
         
         # 스트림릿이 제공하는 라인차트
         st.line_chart(df_selected)
